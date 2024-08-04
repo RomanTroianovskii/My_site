@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Woof-woof web site</title>
+    <script type = "text/javascript">
+        //some js...
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Arimo');
+        body
+        {
+            background-color: black;
+            color: #fff;
+        }
+.top-menu {
+  background: rgb(214, 170, 116);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {display: inline-block;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: -5;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #5b3701;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #5b3701;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+
+.header
+{
+    font-size: 3rem;
+    position: absolute;
+    font-weight: bold;
+}
+.text
+{
+    font-size: 2rem;
+    position: absolute;
+    font-weight: bold;
+    width: 700px;
+}
+.div_workers
+{
+    position: absolute;
+    height: 300px;
+    top: 1300px;
+    color: #000;
+    font-weight: bold;width:300px;border:3px solid rgb(224, 222, 67); border-radius: 10px;
+    background: linear-gradient(#ebbd77,#e4ded5);
+}
+.box{
+    position: absolute;
+    top: 2000px;
+    left:100px;
+  border-width: 5px 5px 5px 5px;
+  border-style: solid dashed solid dashed;
+  border-color: #ceb85f #f3e5f5 #e3a60cee #f3e5f5;
+  padding: 20px 20px 20px 20px;
+}
+.slideshow {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    background: hsl(0, 0%, 0%);
+    margin: 20px 0;
+}
+.slideshow-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: slideanim 40s infinite;
+    pointer-events: none;
+}
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+    animation-delay: 0;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+    animation-delay: 10s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+    animation-delay: 20s;
+}
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img {
+    animation-delay: 30s;
+}
+.slideshow-item img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    animation: zoom 40s infinite;
+}
+.slideshow-item-text {
+    max-width: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 20px 30px;
+    font-family: Verdana, sans-serif;   
+}
+.slideshow-item-text h5 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    color: #BFE2FF;
+}
+.slideshow-item-text p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+@keyframes slideanim {
+    12.5%{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    25%{
+        opacity: 1;
+        pointer-events: auto;
+    }    
+    37.5%{
+        opacity: 0;
+    }
+}
+.down{
+    position: absolute;
+    top: 3120px;
+}
+@keyframes __header1__ {
+    from {
+        font-size: 3rem;
+    }
+
+    to {
+        font-size: 3rem;
+    }
+
+  50%
+  {
+    font-size: 3.2rem;
+  }
+}
+    </style>
+</head>
+<body>
+    <nav class="top-menu">           <ul class="menu-main">
+        <li><a href="#abo">О нас</a></li>
+        <li><a href="#his">Наша история</a></li>
+        <li><a href="#con">Контакты</a></li>
+      </ul>  
+      <a class="navbar-logo" href=""><img src="photo_2024-08-03_20-30-33.jpg" width="100px"></a>
+    </nav>
+        <!--headers-->
+        <div id = "abo" class="header" style="top: 250px;left: 150px; color:#fff; animation: __header1__ 4s infinite;">
+            Ваши лапки в надёжных руках!
+        </div>
+        <div class="header" style="top: 1150px;left: 600px;">
+            Наши приемущества
+        </div>
+        <div class="header" id = "his" style="top: 1800px;left: 700px;">
+            Наша история
+        </div>
+        <!--text-->
+        <div class="text" style="top: 400px;left: 150px; color:#fff;">
+            Почти у каждого человека у когорого есть собака, возникает проблемма: "Куда отдать свою собаку во время отпуска?", везти её с собой очень неудобно, а в большенстве передержок с вашей собакой будут плохо обращаться. Но в отпуск ехать надо, ведь каждому человеку нужен отдых! Куда тогда отдать собаку? У нас есть решение - отдайте её нам! В нашем отеле она будет не тоько отдыхать, но и обучаться! Вашу собаку будут дрессировать опытные кенологи, а присматривать будут за ними специально обученные люди. В нашем отеле ваша собака не будет одна - она будет находиться среди таких же собак и социалезироваться под присмотром.
+        </div>
+        <div class="box">
+            <h2>Мы бы хотели поделиться историей открытия нашего отеля
+
+                Однажды мы столкнулись с неготивным опытом передачи животного на передержку , в элитной заведение . И тогда мы поняли что пора двигаться в этом направлении и открывать свой маленький бизнес ,где мы будем любить и оберегать животных пока их хозяева ходят по своим важным делам. И так по немного маленькими  шагами мы пришли к тому что имеем сейчас. Мы групная компания которая много лет занимается обучением , развлечением и проживанием собак максимально комфортно как для хозяева так и для питомца. У нас не страшно ,что питомец все дни просидит в клетке или не будет покормлен. Мы разработали  свое расписание в поддержке кинологов , соблюдаем  режим дня и вы можете не переживать за своего четврехлапого друга пока вас не будет рядом</h2></div>
+        <img style = "width: 1800px;position: absolute; z-index: -1; left: -5px; top: -5px; "src="https://get.wallhere.com/photo/black-animals-black-background-dog-dachshund-mammal-vertebrate-dog-like-mammal-hound-124481.jpg" alt="">
+        <div class="div_workers" style="left: 350px;">
+            <div style = "position: relative; left: 25px; font-size: 1.5rem; ">
+                Профессиональные работники
+            </div>
+            <div style = "position: relative; left: 25px; top: 50px ;font-size: 1rem;     ">
+                В нашем отеле работают только профессиональные работники. Они будут заботиться о вашей собаке. За вашей собакой будут прсматривать профессиональнее дог-ситеры, и  дрессировать профессиональные кенологи.
+            </div>
+        </div>
+        <div class="div_workers" style="left:700px;">
+            <div style = "position: relative; left: 25px; font-size: 1.5rem;     ">
+                Комфортная обстановка
+            </div>
+            <div style = "position: relative; left: 25px; top: 50px ;font-size: 1rem;     ">
+                Ваша собака будет находиться в удобных и уютных комнатах, как дома. У нас в отеле им будет очень комфортно.
+            </div>
+        </div>
+        <div class="div_workers" style="left: 1050px;">
+            <div style = "position: relative; left: 25px; font-size: 1.5rem;    ">
+                Отдых + развитие
+            </div>
+            <div style = "position: relative; left: 25px; top: 50px ;font-size: 1rem;   ">
+               В нашем отеле ваша собаке будет не только отдыхать, но и развиваться и социалезироваться! Развитие - основа всего!
+            </div>
+        </div>
+      <div class="slideshow" style="top: 2600px;">
+        <div class="slideshow-item" >
+            <img src="https://w-dog.ru/wallpapers/6/4/460677981202417/glaza-nos-ushi-lapy-les.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>Развитие - основа всего!</h5>
+                <p>В нашем отеле собака будет не только отдыхать, но и развиваться!</p>
+            </div>
+        </div>
+        <div class="slideshow-item">
+            <img src="https://kartinki.pics/uploads/posts/2022-12/1671759160_kartinkin-net-p-kartinki-sobaki-ovcharki-oboi-37.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>Ваша собака - наше всё</h5>
+                <p>Именно ваша собака для нас очень важна, и мы будем заботиться о ней.</p>
+            </div>
+        </div>
+        <div class="slideshow-item">
+            <img src="https://w-dog.ru/wallpapers/16/14/495032953101927/sobaka-retriver-fon.jpg" alt="" style="height: 100%;">
+            <div class="slideshow-item-text">
+                <h5>Комфорт - очень важно</h5>
+                <p>В нашем отеле вашей собае будет очень комфортно!</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="down" id = "con">
+        <nav class="top-menu" style="width: 1650px;">           <ul class="menu-main">
+            <li><a href="">+7(931)322-44-12</a></li>
+          </ul>  
+          <a class="navbar-logo" href=""><img src="photo_2024-08-03_20-30-33.jpg" width="100px"></a>
+        </nav>
+    </div>
+</body>
+</html>
