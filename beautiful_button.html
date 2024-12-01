@@ -1,0 +1,43 @@
+<!Doctype html>
+<html lang = "ru">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+
+
+:root{
+
+  --primary-color: 111, 76, 255;
+  
+
+  --text-color: 256, 256, 256;
+}
+.btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  padding: 12px 32px;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.btn-gradient-border {
+  color: rgba(var(--text-color));
+  border: 2px double transparent;
+      background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.btn-glow:hover {
+  box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+}
+
+        </style>
+    </head>
+    <body>
+        <button class="btn btn-gradient-border btn-glow">Gradient Border Button</button>
+    </body>
+</html>
